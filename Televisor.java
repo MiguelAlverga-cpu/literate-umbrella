@@ -5,7 +5,7 @@ public class Televisor {
 
     //contrutor
 
-    public Void Televisor(){
+    public Televisor(){
         this.canal = 1;
         this.volume = 15;
         this.ligado = false;
@@ -16,17 +16,17 @@ public class Televisor {
         ligado = true;
     }
 
-     public void deslisgar(){
+    public void desligar(){
         ligado = false;
     }
 
-     public void AumentarVolume(){
+     public void aumentarVolume(){
         if (ligado && volume < 100){
             volume ++;
         }
     }
 
-    public void DiminuirVolume(){
+    public void diminuirVolume(){
         if (ligado && volume > 100){
             volume --;
         }
