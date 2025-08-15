@@ -6,7 +6,7 @@ public class PrincipalConta {
         Conta conta3 = new Conta(1003, "Carlos");
 
         // Exibir estado inicial das contas
-       System.out.println("=== Estado Inicial das Contas ===");
+        System.out.println("=== Estado Inicial das Contas ===");
         conta1.exibir();
         conta2.exibir();
         conta3.exibir();
