@@ -7,7 +7,7 @@ public class Funcionario {
     private int telefone;
     private int idade ;    
 
-// Construtor
+    // Construtor
     public Funcionario( int codigo,String nome,String CPF,String endereço,int telefone,int idade) {
         this.codigo = codigo;
         this.nome = nome;
@@ -17,8 +17,8 @@ public class Funcionario {
         this.idade = idade;
     }
 
-//Métodos
-public void setCodigo(int codigo){
+    //Métodos
+    public void setCodigo(int codigo){
         this.codigo = codigo;
     }
 
