@@ -1,28 +1,29 @@
+import java.util.Scanner;
+
 public class Turma {
-    private String alunos;
-    private int quantidade;
+    private Aluno[] alunos;
+    private int qtde;
 
-    public Turma(String alunos, int quantidade) {
-        this.alunos = alunos;
-        this.quantidade = quantidade;
+    public Turma(int qtde) {
+        this.qtde = 0;
+        this.alunos = new Aluno[qtde];   // corrigido
     }
-        public  String getAluno(){
-            return alunos;
-        }
-        public int getQuantidade(){
-            return quantidade;
-        }
 
-        public void setAlunos(String alunos) {
-            this.alunos = alunos;
+    public boolean add(Aluno a) {
+        if (qtde == this.alunos.length) return false;
+        this.alunos[this.qtde++] = a;
+        return true;
+    }
+
+    public String getNomeMaisNovo() {
+        if (this.qtde == 0) return null;
+
+        Aluno menor = this.alunos[0];
+        for (Aluno a : this.alunos) {
+            if (a != null && a.getNota1() < menor.getNota2()) {
+                menor = a;
+            }
         }
-        public void  setQuantidade(int quantidade) {
-            this.quantidade = quantidade;
-        }
-        public String toString() {
-            return "Turma{" +
-                    "alunos='" + alunos + '\'' +
-                    ", quantidade=" + quantidade +
-                    '}';
-        }
-        }
+        return menor.getNome();
+    }
+}
