@@ -6,7 +6,7 @@ public class Turma {
 
     public Turma(int qtde) {
         this.qtde = 0;
-        this.alunos = new Aluno[qtde];   // corrigido
+        this.alunos = new Aluno[qtde];   
     }
 
     public boolean add(Aluno a) {
