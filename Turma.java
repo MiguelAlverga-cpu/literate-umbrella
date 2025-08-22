@@ -26,4 +26,19 @@ public class Turma {
         }
         return menor.getNome();
     }
+
+    public void adicionarAluno(Aluno aluno) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'adicionarAluno'");
+    }
+
+    public void listarAlunos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'listarAlunos'");
+    }
+
+    public Aluno buscarPorMatricula(int matriculaBusca) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarPorMatricula'");
+    }
 }

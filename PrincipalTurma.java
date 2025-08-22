@@ -3,9 +3,9 @@ public class PrincipalTurma {
         Turma turma = new Turma(5);
 
         // Adicionar pelo menos 3 alunos
-        ((Object) turma).adicionarAluno(new Aluno("João", 101));
-        turma.adicionarAluno(new Aluno("Maria", 102, 19));
-        turma.adicionarAluno(new Aluno("Pedro", 103, 20));
+        (turma).adicionarAluno(new Aluno("João", 101));
+        turma.adicionarAluno(new Aluno("Maria", 102));
+        turma.adicionarAluno(new Aluno("Pedro", 103));
 
         // Listar todos os alunos
         System.out.println("Lista de Alunos:");
@@ -16,7 +16,7 @@ public class PrincipalTurma {
         System.out.println("\nBuscando aluno com matrícula " + matriculaBusca + ":");
         Aluno encontrado = turma.buscarPorMatricula(matriculaBusca);
         if (encontrado != null) {
-            encontrado.exibirInfo();
+            encontrado.exibirInformacoes();
         } else {
             System.out.println("Aluno não encontrado.");
         }
