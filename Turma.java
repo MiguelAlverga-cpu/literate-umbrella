@@ -25,7 +25,7 @@ public class Turma {
             }
         }
         return menor.getNome();
-    }
+  }
 
     public void adicionarAluno(Aluno aluno) {
         // TODO Auto-generated method stub
