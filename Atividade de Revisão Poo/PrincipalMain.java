@@ -11,12 +11,12 @@ public class PrincipalMain {
         int opcao;
 
         do {
-            System.out.println("\n===== MENU =====");
+            System.out.println("\n===== MENU_ESCOLA =====");
             System.out.println("1 - Cadastrar Disciplina");
             System.out.println("2 - Cadastrar Estudante");
             System.out.println("3 - Inserir Aluno na disciplina");
-            System.out.println("4 - Listar");
-            System.out.println("5 - Sair");
+            System.out.println("4 - Listar ALunos e disciplinas");
+            System.out.println("5 - Encerrar programa");
             System.out.print("Escolha: ");
             opcao = sc.nextInt();
 
