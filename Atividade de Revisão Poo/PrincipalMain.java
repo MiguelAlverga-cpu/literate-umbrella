@@ -14,7 +14,7 @@ public class PrincipalMain {
             System.out.println("\n===== MENU =====");
             System.out.println("1 - Cadastrar Disciplina");
             System.out.println("2 - Cadastrar Estudante");
-            System.out.println("3 - Inserir estudante na disciplina");
+            System.out.println("3 - Inserir Aluno na disciplina");
             System.out.println("4 - Listar");
             System.out.println("5 - Sair");
             System.out.print("Escolha: ");
